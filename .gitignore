@@ -5,7 +5,7 @@ __pycache__/
 
 # C extensions
 *.so
-
+*.csv
 # Distribution / packaging
 .Python
 build/
@@ -21,6 +21,7 @@ sdist/
 var/
 base/
 wheels/
+out/
 share/python-wheels/
 *.egg-info/
 .installed.cfg
@@ -30,6 +31,8 @@ MANIFEST
 #base de dados
 base/
 out/
+
+
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
