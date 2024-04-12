@@ -29,6 +29,7 @@ MANIFEST
 
 #base de dados
 base/
+out/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
