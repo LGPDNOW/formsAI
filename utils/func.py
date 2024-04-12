@@ -10,7 +10,7 @@ def carregar_csvs(diretorio):
             caminho = os.path.join(diretorio, arquivo)
             df_nome = arquivo.split('.')[0]
             # Carregando o DataFrame com o encoding 'utf-8-sig' para lidar com o BOM
-            df = pd.read_csv(caminho, delimiter=';', encoding='utf-8-sig')
+            df = pd.read_csv(caminho, delimiter=';', encoding='utf-8')
             # Limpeza adicional nos nomes das colunas para garantir a remoção de espaços extras e BOM (se por acaso não estiverem em UTF-8)
             df.columns = [col.strip().lstrip('\ufeff') for col in df.columns]
             dataframes[df_nome] = df
